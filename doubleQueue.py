@@ -1,4 +1,4 @@
-operations = ["I 16", "I -5643", "D -1", "D 1", "D 1", "I 123", "D -1"]
+operations = ["I -45", "I 653", "D 1", "I -642", "I 45", "I 97", "D 1", "D -1", "I 333"]
 answer = []
 i = 0
 
@@ -21,9 +21,10 @@ while i<len(operations):
             answer.remove(max(answer))
     i+=1
 if len(answer)==0:
-    print("0 , 0")
+    answer = [0,0]
+    
 else:
-    print(min(answer))
-    print(max(answer))
+    answer = [max(answer),min(answer)]
+print(answer)
     
 
